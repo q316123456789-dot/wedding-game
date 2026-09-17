@@ -1,43 +1,52 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#FFF5F6">
-<title>婚禮解謎｜現場偵探</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFF5F6">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Wedding Quest｜現場偵探</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="app">
-  <main id="game" aria-live="polite"></main>
-  <!-- 23 個 Word 文件頁面的 HTML 模板；互動內容由 script.js 串接。 -->
-  <div id="document-pages" hidden><template id="page-1"><section class="screen" data-document-page="1"></section></template>
-<template id="page-2"><section class="screen" data-document-page="2"></section></template>
-<template id="page-3"><section class="screen" data-document-page="3"></section></template>
-<template id="page-4"><section class="screen" data-document-page="4"></section></template>
-<template id="page-5"><section class="screen" data-document-page="5"></section></template>
-<template id="page-6"><section class="screen" data-document-page="6"></section></template>
-<template id="page-7"><section class="screen" data-document-page="7"></section></template>
-<template id="page-8"><section class="screen" data-document-page="8"></section></template>
-<template id="page-9"><section class="screen" data-document-page="9"></section></template>
-<template id="page-10"><section class="screen" data-document-page="10"></section></template>
-<template id="page-11"><section class="screen" data-document-page="11"></section></template>
-<template id="page-12"><section class="screen" data-document-page="12"></section></template>
-<template id="page-13"><section class="screen" data-document-page="13"></section></template>
-<template id="page-14"><section class="screen" data-document-page="14"></section></template>
-<template id="page-15"><section class="screen" data-document-page="15"></section></template>
-<template id="page-16"><section class="screen" data-document-page="16"></section></template>
-<template id="page-17"><section class="screen" data-document-page="17"></section></template>
-<template id="page-18"><section class="screen" data-document-page="18"></section></template>
-<template id="page-19"><section class="screen" data-document-page="19"></section></template>
-<template id="page-20"><section class="screen" data-document-page="20"></section></template>
-<template id="page-21"><section class="screen" data-document-page="21"></section></template>
-<template id="page-22"><section class="screen" data-document-page="22"></section></template>
-<template id="page-23"><section class="screen" data-document-page="23"></section></template></div>
-</div>
-<div id="feedback" class="feedback" aria-hidden="true">
-  <div class="feedback-card"><div class="feedback-icon" id="feedbackIcon">✓</div><div id="feedbackText">答案正確！</div></div>
-</div>
-<script src="script.js"></script>
+  <div class="page-shell">
+    <div id="petals" class="petals" aria-hidden="true"></div>
+    <main id="game" class="game" aria-live="polite">
+      <!-- 23 個遊戲畫面容器，內容由 script.js 動態渲染 -->
+      <section class="game-page" data-page="1"></section>
+      <section class="game-page" data-page="2"></section>
+      <section class="game-page" data-page="3"></section>
+      <section class="game-page" data-page="4"></section>
+      <section class="game-page" data-page="5"></section>
+      <section class="game-page" data-page="6"></section>
+      <section class="game-page" data-page="7"></section>
+      <section class="game-page" data-page="8"></section>
+      <section class="game-page" data-page="9"></section>
+      <section class="game-page" data-page="10"></section>
+      <section class="game-page" data-page="11"></section>
+      <section class="game-page" data-page="12"></section>
+      <section class="game-page" data-page="13"></section>
+      <section class="game-page" data-page="14"></section>
+      <section class="game-page" data-page="15"></section>
+      <section class="game-page" data-page="16"></section>
+      <section class="game-page" data-page="17"></section>
+      <section class="game-page" data-page="18"></section>
+      <section class="game-page" data-page="19"></section>
+      <section class="game-page" data-page="20"></section>
+      <section class="game-page" data-page="21"></section>
+      <section class="game-page" data-page="22"></section>
+      <section class="game-page" data-page="23"></section>
+    </main>
+  </div>
+
+  <div id="feedback" class="feedback" aria-hidden="true">
+    <div id="confetti" class="confetti" aria-hidden="true"></div>
+    <div class="feedback-card">
+      <div class="feedback-icon">✓</div>
+      <div class="feedback-title">答案正確！</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
