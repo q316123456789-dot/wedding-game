@@ -338,7 +338,9 @@ const pages = [
     type:"imageText", image:["Egg.jpg"], story:`彩蛋已解鎖！
 
 謝謝各位偵探一路玩到最後
-記得找我們拿彩蛋禮物唷！`, final:true
+記得找我們拿彩蛋禮物唷！
+
+PS 轉傳沒用唷~`, final:true
   }
 ];
 
